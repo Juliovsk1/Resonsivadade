@@ -34,14 +34,16 @@ button{
     background-image: url(./img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 #presentation {
     width: 600px;
-    position: relative;
-    top: calc(50% - 9rem);
+
 }
 .container{
-    padding: 10rem 7.5rem;
+    padding: 5rem 7.5rem;
     text-align: center;
 }
 #contact h2{
@@ -60,4 +62,17 @@ button{
 }
 .background-gradient{
         background: linear-gradient(180deg, #fff, #d9d9d9);
+}
+.background-red{
+    background-color: #F84646;
+    color: #fff;
+}
+#qualites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+#qualites img{
+    margin: 0 2.5rem;
 }

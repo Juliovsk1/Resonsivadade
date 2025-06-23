@@ -42,10 +42,6 @@ button{
     width: 600px;
 
 }
-.container{
-    padding: 5rem 7.5rem;
-    text-align: center;
-}
 #contact h2{
     margin-top: .5rem;
 }
@@ -56,17 +52,6 @@ button{
     margin-top: 2rem;
      transition: opacity 0.5s ease-in-out, transform .3s .1s;
 }
-.container button:hover{
-    opacity: 0.8;
-    transform: scale(1.1);
-}
-.background-gradient{
-        background: linear-gradient(180deg, #fff, #d9d9d9);
-}
-.background-red{
-    background-color: #F84646;
-    color: #fff;
-}
 #qualites{
     display: flex;
     justify-content: center;
@@ -75,4 +60,40 @@ button{
 }
 #qualites img{
     margin: 0 2.5rem;
+}
+.container button:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.background-gradient{
+    background: linear-gradient(180deg, #fff, #d9d9d9);
+}
+.container{
+    padding: 5rem 7.5rem;
+    text-align: center;
+}
+.background-red{
+    background-color: #F84646;
+    color: #fff;
+}
+.article-conteiner{
+    display: flex;
+}
+.article-conteiner:nth-child(even){
+    margin-top: 5rem;
+    flex-direction: row-reverse;
+}
+.article-details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    margin: 0 2.5rem 0 0;
+    justify-content: space-between;
+}
+.article-details button{
+    font-size: 1rem;
+}
+.article-conteiner:nth-child(even) .article-details{
+    margin: 0 0 0 2.5rem;
 }

@@ -62,8 +62,8 @@ button{
     margin: 0 2.5rem;
 }
 #footer-list{
-    display: flex;
-    text-align: left;
+    display: grid;
+    grid-auto-flow: column;
 }
 
 #footer-list li{
@@ -113,4 +113,10 @@ button{
 }
 .article-conteiner:nth-child(even) .article-details{
     margin: 0 0 0 2.5rem;
+}
+.footer-copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8.5rem;
 }

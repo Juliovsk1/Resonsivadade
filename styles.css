@@ -140,6 +140,9 @@ button{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
+.references{
+    background-color: #F4F5F7;
+}
 .company-1{
     grid-area: 3 / 1;
 }

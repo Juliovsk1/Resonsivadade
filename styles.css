@@ -18,6 +18,10 @@ h2{
     font-size: 3rem;
     font-weight: 800; 
 }
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
 button{
     background-color: #F84646;
     color: #fff;
@@ -119,4 +123,15 @@ button{
     justify-content: space-between;
     align-items: center;
     margin-top: 8.5rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+.grid-item h3{
+    margin-top: .5rem;
+}
+.grid-item p{
+    margin: .5rem 0 0;
 }

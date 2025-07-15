@@ -144,8 +144,9 @@ button{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
 }
-.references{
+.background-grey{
     background-color: #F4F5F7;
 }
 .item-reference{
@@ -153,6 +154,8 @@ button{
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+    background-color: #fff;
+    border-radius: 1rem;
 }
 .company-1{
     grid-area: 3 / 1;

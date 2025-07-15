@@ -15,7 +15,7 @@ h1 {
 }
 h2{
     margin: 0px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800; 
 }
 h3{
@@ -65,19 +65,19 @@ button{
 #qualites img{
     margin: 0 2.5rem;
 }
-#footer-list{
-    display: grid;
-    grid-auto-flow: column;
+.footer-list{
+    display: flex;
+    text-align: left;
 }
 
-#footer-list li{
+.footer-list li{
     list-style: none;
     margin-bottom: 1rem;
 }
-#footer-list li:last-child{
+.footer-list li:last-child{
     margin-bottom: 0;
 }
-#footer-list li:first-child{
+.footer-list li:first-child{
     font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
@@ -97,12 +97,13 @@ button{
     background-color: #F84646;
     color: #fff;
 }
-.article-conteiner{
+.article-container{
     display: flex;
+    flex-direction: row;
 }
-.article-conteiner:nth-child(even){
-    margin-top: 5rem;
-    flex-direction: row-reverse;
+.article-container img{
+    width: 50%;
+    object-fit: cover;
 }
 .article-details{
     display: flex;
@@ -115,8 +116,12 @@ button{
 .article-details button{
     font-size: 1rem;
 }
-.article-conteiner:nth-child(even) .article-details{
+.article-container:nth-child(even) .article-details{
     margin: 0 0 0 2.5rem;
+}
+.article-container:nth-child(even){
+    margin-top: 5rem;
+    flex-direction: row-reverse;
 }
 .footer-copyright{
     display: flex;
@@ -176,4 +181,157 @@ button{
 .company-9{
     grid-area: 3 / 5;
 }
-@me
+@media only screen and (min-width: 767px) and (max-width: 1023px){\\Tablet
+    h1{
+    font-size: 3.5rem;
+    }
+    h2{
+    font-size: 2.0rem;
+    }
+    #presentation-container{
+        padding: 5rem 4rem;
+    }
+    .container{
+        padding: 5rem 4rem;
+    }
+    .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-container-referencias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+.company-1{
+    grid-area: auto;
+}
+.company-2{
+    grid-area: auto;
+}
+.company-3{
+    grid-area: auto;
+}
+.company-4{
+    grid-area: auto;
+}
+.company-5{
+    grid-area: auto;
+}
+.company-6{
+    grid-area: auto;
+}
+.company-7{
+    grid-area: auto;
+}
+.company-8{
+    grid-area: auto;
+}
+.company-9{
+    grid-area: auto;
+}
+}
+@media only screen and (max-width: 767px) {\\Mobile
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    #presentation-container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .grid-container{
+    grid-template-columns: 1fr;
+    }
+    #qualites{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    }
+    #qualites img{
+       transform: rotate(90deg);
+       margin: 2.5rem 0;
+    }
+    .article-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+    .article-container:nth-child(even){
+        flex-direction: column-reverse;
+    }
+    .article-details{
+        text-align: center;
+        align-items: normal;
+    }
+    .article-details{
+        margin: 2rem 0 0 0;
+    }
+    .article-container:nth-child(even) .article-details{    
+        margin: 2rem 0 0 0;
+    }
+    .article-container img{
+    width: 100%;
+    object-fit: cover;
+    }
+    .grid-container-referencias{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    }
+    .item-reference{
+        height: 6rem;
+    }
+    .company-1{
+    grid-area: auto;
+        margin-bottom: 2.5rem;
+    }
+    .company-2{
+    grid-area: auto;
+    }
+    .company-3{
+    grid-area: auto;
+    }
+    .company-4{
+    grid-area: auto;
+    }
+    .company-5{
+    grid-area: auto;
+    }
+    .company-6{
+    grid-area: auto;
+    }
+    .company-7{
+    grid-area: auto;
+    }
+    .company-8{
+    grid-area: auto;
+    }
+    .company-9{
+    grid-area: auto;
+    }
+    .item-reference{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .footer-list{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-list ul {
+        margin-top: 3rem;
+    }
+    .footer-list ul:first {
+        margin-top: 0;
+    }
+    .footer-copyright{
+        flex-direction: column-reverse;
+    }
+    .footer-copyright div:first-child{
+        margin-top: 4rem;
+    }
+}
